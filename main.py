@@ -6,8 +6,13 @@ app.secret_key = "any random string"
 
 
 @app.route('/')
-def mainpage():
+def planet_list():
     return render_template('index.html')
+
+
+@app.route('/register')
+def register():
+    pass
 
 
 if __name__ == '__main__':
