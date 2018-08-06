@@ -10,7 +10,47 @@
     <script type="text/javascript" src="static/mainJS.js" defer></script>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Planet list</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Voting statistics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Registration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Log out</a>
+          </li>
+        </ul>
+    </nav>
 
+    <div class="container">
+        <h1>Star Wars universe planets</h1>
+        <button class="btn btn-primary">Previous</button>
+        <button class="btn btn-primary">Next</button>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>name</th>
+                    <th>diameter (in km)</th>
+                    <th>climate</th>
+                    <th>terrain</th>
+                    <th>surface water (in percentage)</th>
+                    <th>population</th>
+                </tr>
+            </thead>
+            <tbody id="datatable">
+            <!-- data from swapi -->
+            </tbody>
+        </table>
+    </div>
 
 
     <!-- bootstrap js -->
